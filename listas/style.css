@@ -1,0 +1,11 @@
+ul {
+    background-color: black;
+    padding: 20px;
+}
+
+li {
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    margin-left: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* En principio está pensado para pantallas de celulares. Con menos de 480px. El texto se pondrá sobre la imagen */
+        .contenedor {
+            overflow: auto; /* Permite el desplazamiento si el contenido es más grande que el contenedor */
+        }
+    
+        .leftside {
+            float: none; /* No flota, se muestra en su posición normal */
+            width: auto; /* Ancho automático basado en su contenido */
+        }
+    
+        .texto {
+            position: absolute; /* Se posiciona sobre la imagen */
+            top: 0; /* Se coloca en la parte superior del contenedor */
+            color: red; /* Texto de color rojo */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografía especificada */
+        }
+    
+        /* Cuando la pantalla sea grande y sobrepase los 480px */
+        @media (min-width: 480px) {
+            .leftside {
+                float: left; /* Flota a la izquierda del contenedor */
+                width: 300px; /* Ancho fijo de 300px */
+            }
+    
+            img {
+                width: 300px; /* Ancho fijo de 300px para la imagen */
+            }
+    
+            .texto {
+                position: static; /* Posición estática, sigue el flujo normal del documento */
+            }
+        }
+
+        /*Mientras no alcance los 900px, el fondo será negro y las letras blancas*/
+        @media (max-width:900px) and (max-height: 500px) { 
+            body {
+                background-color: black;
+            }
+            .texto {
+                color: white;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        
+        <div class="contenedor">
+            <div class="leftside">
+                <img src="/assets/img/paisaje mediano.jpg">
+            </div>
+        
+            <div class="texto">
+                <h1>IMAGEN</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio natus voluptas fugiat ratione totam aliquam facere nostrum cum, at, doloremque ab dolore, cumque animi laborum molestiae nobis atque maiores.</p>
+            </div>
+        </div>
+    </body>
+    
+    
+</body>
+</html>

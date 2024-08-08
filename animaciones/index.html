@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            opacity: 1;/*comienza acá con este valor*/
+            width: 400px;
+            transition: opacity 2s ease-in-out 0.3s, width 5s linear;
+        }
+        img:hover{
+            opacity: 0.5;
+            /* transition-property: opacity;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2; */
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit possimus eaque pariatur corrupti esse eligendi blanditiis fuga, quis temporibus qui atque alias sunt, magni nostrum nisi animi aspernatur nesciunt cumque!</p>
+    <img src="/assets/img/vista-simple-cruz-religiosa-3d.jpg">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur delectus repudiandae repellat non dolorum ab consequatur nam, impedit ut tempora obcaecati earum deleniti dolorem nihil, pariatur provident eius quia repellendus.</p>
+</body>
+</html>

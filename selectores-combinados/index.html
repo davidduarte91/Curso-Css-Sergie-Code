@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Selectores Combinados</title>
+    <style>
+        /* Selector de descendiente: aplica estilo a todos los <p> dentro de un <div> */
+        div p {
+            color: blue;
+        }
+
+        /* Selector de hijo: aplica estilo a los <p> que son hijos directos de un <div> */
+        div > p {
+            font-weight: bold;
+        }
+
+        /* Selector de hermano adyacente: aplica estilo al <p> que sigue inmediatamente a un <h1> */
+        h1 + p {
+            color: red;
+        }
+
+        /* Selector de hermano general: aplica estilo a todos los <p> que son hermanos de un <h1> */
+        h1 ~ p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parrafo 1 en un div (descendiente y hijo directo)</p>
+        <span>
+            <p>Parrafo 2 en un div anidado (descendiente)</p>
+        </span>
+    </div>
+    <h1>Título</h1>
+    <p>Parrafo 3 (hermano adyacente)</p>
+    <p>Parrafo 4 (hermano general)</p>
+</body>
+</html>

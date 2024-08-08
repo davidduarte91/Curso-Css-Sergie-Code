@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Posiciona el elemento h1 de manera absoluta en relación con el contenedor más cercano (el viewport en este caso) */
+        h1 {
+            position: absolute;
+            top: 30px; /* Desplaza el elemento 30px desde la parte superior */
+            font-size: 80px; /* Tamaño de fuente del título */
+        }
+
+        /* Clase .adelante para el segundo <img> */
+        .adelante {
+            position: relative; /* Posiciona el elemento relativo a su posición normal */
+            z-index: 1; /* Aumenta el z-index para que este elemento se apile por encima de los elementos con menor z-index */
+            left: 50px; /* Desplaza el elemento 50px hacia la derecha desde su posición normal */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Primer imagen sin ninguna clase -->
+    <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/c4be2b0/2147483647/strip/true/crop/672x672+247+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fce%2Ffa%2F1ba5b84b489e9a1513d5209793b7%2Fhamburguesa-hawaiana.jpeg" width="200px">
+
+    <!-- Título principal -->
+    <h1>Título principal</h1>
+
+    <!-- Segunda imagen con la clase .adelante para aplicar z-index y desplazamiento -->
+    <img class="adelante" src="https://editorialtelevisa.brightspotcdn.com/dims4/default/c4be2b0/2147483647/strip/true/crop/672x672+247+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fce%2Ffa%2F1ba5b84b489e9a1513d5209793b7%2Fhamburguesa-hawaiana.jpeg" width="200px">
+
+</body>
+</html>

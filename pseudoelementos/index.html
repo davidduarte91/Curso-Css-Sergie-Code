@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudoelementos</title>
+    <style>
+        /* ::before: Añadir contenido antes del elemento */
+        p::before {
+            content: "→ ";
+            color: red;
+        }
+
+        /* ::after: Añadir contenido después del elemento */
+        p::after {
+            content: " ←";
+            color: green;
+        }
+
+        /* ::first-line: Estilizar la primera línea del elemento */
+        p::first-line {
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* ::first-letter: Estilizar la primera letra del elemento */
+        p::first-letter {
+            font-size: 2em;
+            color: orange;
+        }
+
+        /* ::selection: Estilizar la parte seleccionada del elemento */
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Este es un ejemplo de párrafo para mostrar el uso de pseudoelementos en CSS.</p>
+</body>
+</html>

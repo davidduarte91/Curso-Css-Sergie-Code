@@ -1,0 +1,28 @@
+h1 {
+    background-color: black;
+    color: white;
+}
+
+h2{
+    background-color: red;
+}
+
+h2.seccion3 {
+    color: yellow;
+}
+
+p.seccion1 {
+    background-color: green;
+}
+
+#parrafoSeleccionado { /*p#parrafoSeleccionado -> es redundante*/
+    color: rgb(128, 50, 128);
+}
+
+.estilo-fuente-distinto {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seccion1.estilo-fuente-distinto {
+    text-align: end;
+}

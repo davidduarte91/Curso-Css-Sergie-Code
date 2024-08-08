@@ -1,0 +1,40 @@
+p.dotted {
+    border-style: dotted; /*estilos sin shorthand*/
+    border-color: blue;
+    border-width: 3px;
+}
+p.dashed {
+    border-style: dashed;
+    border-left-style: solid; /*dando estilo solo al lado izquierdo*/
+    border-left-color: red;
+    border-left-width: 5px;
+}
+p.solid {
+    border: 5px solid green;
+    border-radius: 10px; /*para suavizar las esquinas*/
+}
+p.double {
+    border-style: double;
+    border-top: 4px solid violet; /*estilo con shorthand*/
+}
+p.groove {
+    border-style: groove;
+}
+p.ridge {
+    border-style: ridge;
+}
+p.inset {
+    border-style: inset;
+}
+p.outset {
+    border-style: outset;
+}
+p.none {
+    border-style: none;
+}
+p.hidden {
+    border-style: hidden;
+}
+p.mix {
+    border-style: dotted dashed groove ridge;
+}

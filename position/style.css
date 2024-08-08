@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+}
+
+img {
+    width: 75%;
+    height: auto;
+}
+
+.texto {
+    position: absolute;
+    top: 40%;
+    width: 75%;
+    text-align: center;
+    color: white;
+}

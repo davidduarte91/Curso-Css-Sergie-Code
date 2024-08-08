@@ -1,0 +1,17 @@
+.cajitaAzul {
+    /* box-sizing: border-box; */
+    background-color: blue;
+    color: #ffffff;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.cajitaRoja {
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    min-height: 100px;
+    width: 100px;
+}
+

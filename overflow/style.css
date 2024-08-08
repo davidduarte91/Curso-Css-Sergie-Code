@@ -1,0 +1,16 @@
+.hidden {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.scroll {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 20px;
+}

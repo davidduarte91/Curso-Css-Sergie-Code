@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            background-color: rgb(30, 23, 23);
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+            border-right: 1px solid green;
+        }
+        li a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+        li:last-child {
+            border-right: none;
+            float: right;
+            border-left: 1px solid green;
+        }
+        .active {
+            background-color: coral;
+        }
+        li:hover{
+            background-color: rgb(241, 143, 108);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">Preferencias</a></li>
+                <li><a href="">Audiovisuales</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
